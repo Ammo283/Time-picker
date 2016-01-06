@@ -44,13 +44,16 @@ $(function()
 	
 	$('#date-range0').dateRangePicker(
 	{
-		startOfWeek: 'monday',
+		startOfWeek: 'sunday',
     	separator : ' ~ ',
     	format: 'YYYY/MM/DD HH:mm',
     	autoClose: false,
+    	startDate: new Date(),
+		selectForward: true,
 		time: {
 			enabled: true
 		}
+
 		/*startDate :(String or false)
 		This string defines the earliest date which is allowed for the user, same format as `format`
 
